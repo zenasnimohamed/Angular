@@ -4,6 +4,7 @@ package com.rest.api;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by Damith Ganegoda on 9/3/17.
  */
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping(value = "/users")
 public class UserController {
